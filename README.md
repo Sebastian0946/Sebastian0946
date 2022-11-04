@@ -7,11 +7,11 @@ I am a Jr. programmer willing to learn, read and develop.<br><br>I am willing to
 
 # 📊 GitHub Stats:
 ![](https://github-readme-stats.vercel.app/api?username=Sebastian0946&theme=monokai&hide_border=false&include_all_commits=true&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=Sebastian0946&theme=monokai&hide_border=false)<br/>
+                                                                                                  ![](https://github-readme-streak-stats.herokuapp.com/?user=Sebastian0946&theme=monokai&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=Sebastian0946&theme=monokai&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
-                                                                                                                                                                                                                                                                                                        ### ✍️ Random Dev Quote
-                                                                                                                                                                                                                                                                                                        ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox)
+                                                                                                                                                                                                                                                                                                                                                  ### ✍️ Random Dev Quote
+                                                                                                                                                                        ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox)
 
 ---
 [![](https://visitcount.itsvg.in/api?id=Sebastian0946&icon=2&color=0)](https://visitcount.itsvg.in)
