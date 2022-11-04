@@ -12,9 +12,6 @@ I am a Jr. programmer willing to learn, read and develop.<br><br>I am willing to
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=gruvbox)
 
-### 😂 Random Dev Meme
-<img src="https://random-memer.herokuapp.com/" width="512px"/>
-
 ---
 [![](https://visitcount.itsvg.in/api?id=Sebastian0946&icon=2&color=0)](https://visitcount.itsvg.in)
 
