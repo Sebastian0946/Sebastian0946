@@ -1,5 +1,7 @@
-<?php
+<?php include("db.php") ?>
 
-echo "hello word";
+<?php include("includes/header.php") ?>
 
-?>
+<h1>Hello Word</h1>
+
+<?php include("includes/footer.php") ?>
