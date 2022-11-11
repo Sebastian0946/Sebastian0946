@@ -1,0 +1,18 @@
+ <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Karen Alirga,<span class="testimony__course">Estudiante de Cocina Basica</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni. Temporibus excepturi optio dolorem architecto ab.</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="img/face2.jpg" class="testimony__img">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Jordan Alexander,<span class="testimony__course">Estudiante de Cocina Experta</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, magni. Temporibus excepturi optio dolorem architecto ab.</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="img/face3.jpg" class="testimony__img">
+                    </figure>
+                </section>
