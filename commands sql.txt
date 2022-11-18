@@ -1,0 +1,16 @@
+Alter table Customers add eliminado int null;
+select * from Customers;
+Delete from Customers where CustomerID;
+update customers set eliminado=0;
+update customers set eliminado=1 where CustomerID=5;
+select * from Products inner join OrderDetails on Products.ProductID=OrderDetails.ProductID;
+select * from Products P inner join OrderDetails O on P.ProductID = O.ProductID where P.productID between 1 and 20;
+
+solo id tres tablas relacion
+SELECT OrderID, C.CustomerID, E.EmployeeID FROM Customers C JOIN Orders O ON C.CustomerID = O.CustomerID JOIN Employees E ON O.EmployeeID = E.EmployeeID;
+
+Mostrar la relacion de las tres tablas
+select * from Customers C inner Join orders O on C.CustomerID = O.CustomerID inner join Employees E on o.EmployeeID = E.EmployeeID order by E.EmployeeID asc;
+
+De informacion para otro
+Select * from Customers C left join OrderDetail O on C.CustomerID = O.OrderID;
