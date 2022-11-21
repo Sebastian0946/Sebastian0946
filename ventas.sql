@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-11-2022 a las 21:06:09
+-- Tiempo de generación: 21-11-2022 a las 23:31:37
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -86,6 +86,22 @@ CREATE TABLE `producto` (
   `precio` float(8,2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`codigoProducto`, `existencias`, `descripcion`, `precio`) VALUES
+(1, 25, 'Arroz - Grano', 25000.00),
+(2, 45, 'Lenteja - Grano', 453.00),
+(3, 26, 'Garbanzo - Grano', 4000.00),
+(4, 15, 'Coca-Cola - Bebida', 9051.00),
+(5, 8, 'Iphone 14 Pro max - Tecnologia', 1000000.00),
+(6, 15, 'Sprise 250ml - Bebida', 7200.00),
+(7, 150, 'Arveja', 170.00),
+(8, 50, 'Leche Larga Vida Descremada Alquería - Lacteo', 3970.00),
+(9, 25, 'Bolsa de sal - Grano', 8250.00),
+(10, 56, 'Papas Francesa Congelada', 3250.00);
+
 -- --------------------------------------------------------
 
 --
@@ -117,7 +133,14 @@ INSERT INTO `proveedor` (`codigoProveedor`, `Nombre`, `Apellidos`, `dirrecion`, 
 (10, 'Hasbleidy', 'Quesada Guarnizo', 'Calle 45 #26-25', '3251549876'),
 (11, 'Maria Camila', 'Velez Ramirez', 'Calle 15 #45-23', '3215454789'),
 (12, 'Carlos Stiven', 'Benavidez Loreno', 'Calle 15 #25-35', '3125461879'),
-(13, 'Maria del Campo', 'Salazar Gonzalez', 'Calle 24 #25-02', '3245615489');
+(13, 'Maria del Campo', 'Salazar Gonzalez', 'Calle 24 #25-02', '3245615489'),
+(14, 'Maira', 'Gonzalez de la Cruz', 'calle 24 #55-12', '3256874859'),
+(15, 'Mariana', 'Salazar Salamanca', 'Calle 24 #52-15', '3256148796'),
+(16, 'Kailo', 'Smith Eslonso', 'Calle 15 #45-25', '+1 660-486-8968'),
+(17, 'Mike', 'Wazowski', 'Calle 15 A. roca #45-2', '3251645789'),
+(18, 'Carlos Andres', 'Cachaya Polo', 'Carre 22 #45-18', '3214685479'),
+(19, 'Lalo', 'Garcia Vargas', 'Calle 16 #25-04', '3124587498'),
+(20, 'Elizabeth', 'Betancour Smith', 'Calle 25 #43-23', '3254125498');
 
 --
 -- Índices para tablas volcadas
@@ -162,13 +185,13 @@ ALTER TABLE `cliente`
 -- AUTO_INCREMENT de la tabla `producto`
 --
 ALTER TABLE `producto`
-  MODIFY `codigoProducto` int(4) NOT NULL AUTO_INCREMENT;
+  MODIFY `codigoProducto` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `proveedor`
 --
 ALTER TABLE `proveedor`
-  MODIFY `codigoProveedor` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `codigoProveedor` int(40) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- Restricciones para tablas volcadas
