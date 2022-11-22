@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body{
+    background: wheat;
+}
+
+
+h1{
+    text-align: center;
+    padding-top: 12px;
+    background-color: #666;
+    color: white;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 25px;
+    padding-bottom: 15px;
+}
+
+.buttons{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.data{
+    padding-top: 40px;
+    margin-left: 25%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.tablecaja{
+    padding-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.CerrarCaja{
+    padding-top: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;   
+}
+
+.table th,
+.table tr,
+.table td{
+    border: 1px solid;
+}

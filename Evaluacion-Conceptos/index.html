@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Library/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <title>Evaluacion</title>
+</head>
+<body>
+    <h1>Control de ventas</h1>
+    <!-- cramos un miniformulario para la creacion de la caja -->
+    <div class="data">
+        <div class="form-floating mb-3">
+            <input type="text" id="Nombre_Cliente" name="Nombre_Cliente" class="form-control" >
+            <label class="floatingInput">Nombre Cliente</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" id="Valor_factura" name="Valor" class="form-control" >
+            <label class="floatingInput"> Valor bruto </label>
+        </div>
+    </div>
+    <!-- Creamos los botones con las funciones -->
+    <div class="buttons">
+        <button class="btn btn-success" onclick="generarRegistro()"><i class="fa-solid fa-door-open m-1"></i> Abrir caja</button>
+        <button class="btn btn-danger" onclick="CerrarCaja()"><i class="fa-sharp fa-solid fa-circle-xmark m-1"></i>Cerrar Caja</button>
+    </div>
+    <!-- Tabla con la venta -->
+    <div class="tablecaja">
+        <table class="table " id="generarCaja">
+            
+        </table>
+    </div>    
+    <!-- Creacion cierre de caja -->
+    <div class="CerrarCaja">
+        <div >
+            <label >Valor Venta: </label>
+            <input type="text" id="ValorVenta" style="border: 0;" readonly>
+        </div>
+
+        <div>
+            <label>Valor Total IVA: </label>
+            <input type="text" id="ValorIva" style="border: 0;" readonly>
+        </div>
+
+        <div>
+            <label>Valor Total descuento: </label>
+            <input type="text" id="ValorIva" style="border: 0;" readonly>
+        </div>
+
+        <div>
+            <label>Valor Total Neto: </label>
+            <input type="text" id="ValorIva" style="border: 0;" readonly>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/8567312853.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
