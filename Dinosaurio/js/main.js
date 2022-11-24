@@ -25,7 +25,7 @@ function Loop(){
 
 //Juego va aqui//
 
-var sueloY = 22;
+var sueloY = 20;
 var velY = 0;
 var impulso = 22;
 var gravedad = 100;
@@ -78,6 +78,9 @@ function Saltar(){
 }
 
 function Update(){
+
+    if(parado) return;
+
     MoverSuelo();
     MoverDinosaurio();
     DecidirCrearObstaculos();
@@ -87,9 +90,9 @@ function Update(){
     velY -= gravedad * deltatime;
 }
 
-function MoverSuelo(){
+function MoverSuelo() {
     sueloX += CalcularDesplazamiento();
-    suelo.style.left = -(sueloX % contenedor.clientWidth)+"px";
+    suelo.style.left = -(sueloX % contenedor.clientWidth) + "px";
 }
 
 function CalcularDesplazamiento(){
@@ -105,7 +108,7 @@ function MoverDinosaurio(){
 }
 
 
-function TocarSuelo(){
+function TocarSuelo() {
     dinoPosY = sueloY;
     velY = 0;
     if(saltando){
@@ -150,14 +153,14 @@ function GanarPuntos(){
     textoScore.innerText = score;
 }
 
-function DetectarColision(){
-    for(var i = 0; i < obstaculos.length; i++){
-        if(obstaculos[i].posX > dinoPosX + dino.clientWidth){
-            //evade
-            break;
+function DetectarColision() {
+    for (var i = 0; i < obstaculos.length; i++) {
+        if(obstaculos[i].posX > dinoPosX + dino.clientWidth) {
+            //EVADE
+            break; //al estar en orden, no puede chocar con más
         }else{
-            if(Iscollision()){
-                gameOver();
+            if(IsCollision(dino, obstaculos[i], 10, 30, 15, 20)) {
+                GameOver();
             }
         }
     }
@@ -173,4 +176,15 @@ function IsCollision(a, b, paddingTop, paddingRight, paddingBottom, paddingLeft)
         ((aRect.left + aRect.width - paddingRight) < bRect.left) ||
         (aRect.left + paddingLeft > (bRect.left + bRect.width))
     );
+}
+
+function GameOver(){
+    Estrellarse();
+    gameOver.style.display = "block";
+}
+
+function Estrellarse(){
+    dino.classList.remove("dino-corriendo");
+    dino.classList.add("dino-estrellado");
+    parado = true;
 }

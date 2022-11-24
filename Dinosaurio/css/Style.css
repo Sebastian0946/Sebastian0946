@@ -21,7 +21,7 @@ body{
     overflow: hidden; 
 }
 
-.dino{
+.dino {
     width: 84px;
     height: 84px;
 
@@ -30,19 +30,18 @@ body{
     left: 42px;
     z-index: 2;
 
-    background: url(/Img/dino.png) repeat-x 0px 0px;
+    background: url(/img/dino.png) repeat-x 0px 0px;
     background-size: 336px 84px;
     background-position-x: 0px;
+
 }
 
-.dino-corriendo{
+.dino-corriendo {
     animation: animarDino 0.25s steps(2) infinite;
 }
-
-.dino-estrellado{
+.dino-estrellado {
     background-position-x: -252px;
 }
-
 .suelo{
     width: 200%;
     height: 42px;
