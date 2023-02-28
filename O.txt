@@ -1,0 +1,4 @@
+El principio abierto/cerrado busca evitar que el código existente se descomponga al implementar nuevas funciones en una clase. Una clase está abierta si se puede extender mediante la creación de una subclase y agregar nuevos métodos o campos, mientras que está cerrada si su interfaz está claramente definida y no se cambiará en el futuro. Es posible que una clase esté abierta para la extensión y cerrada para la modificación al mismo tiempo. En lugar de modificar directamente el código de una clase, se puede crear una subclase y sobrescribir las partes necesarias de la clase original. Este principio no se aplica a todos los cambios en una clase, especialmente cuando se trata de arreglar errores en la clase original. Una clase hija no debe ser responsable de los problemas de la clase padre.
+
+
+
